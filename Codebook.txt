@@ -1,0 +1,47 @@
+==================================================================
+Assignment-MODULE-2
+==================================================================
+Pedro Ros Prado
+==================================================================
+I have created a R script called run_analysis.R that does the following. 
+
+Merges the training and the test sets to create one data set.
+
+Extracts only the measurements on the mean and standard deviation for each measurement. 
+
+Uses descriptive activity names to name the activities in the data set
+
+Appropriately labels the data set with descriptive variable names. 
+
+From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+======================================
+Files used:
+
+- 'activity_labels.txt': Links the class labels with their activity name.
+
+- 'features.txt': List of all features.
+
+- 'subject_train.txt
+
+- 'X_train.txt': Training set.
+
+- 'y_train.txt': Training labels.
+
+- 'X_test.txt': Test set.
+
+- 'y_test.txt': Test labels.
+
+The new "dataset"
+=========================================
+
+1. Read training and test files.
+2. Combine training and test files: training1, training2, trainining3 and training4 dataframes. 
+3. Rename V1 to obtain "dataset" 
+
+Extracts only the measurements on the mean and standard deviation for each measurement in "dataset2" 
+=========================================
+Using vars_select(names(dataset)
+
+Creates a second, independent tidy data set with the average of each variable for each activity and each subject in "dataset3" 
+=========================================
+Using group_by and summarise across on dataset2
